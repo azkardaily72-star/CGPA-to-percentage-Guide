@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>How to Convert CGPA to Percentage – Complete Guide</title>
+
+<meta name="description" content="Learn how to convert CGPA to percentage with formulas, examples, conversion tables, FAQs, and a complete step-by-step student guide.">
+
+<meta name="keywords" content="cgpa to percentage, cgpa percentage calculator, how to convert cgpa to percentage, cgpa converter">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f4f7fb;
+color:#1e293b;
+line-height:1.9;
+}
+
+.container{
+width:92%;
+max-width:1200px;
+margin:auto;
+display:flex;
+gap:30px;
+padding:40px 0;
+}
+
+.sidebar{
+width:280px;
+position:sticky;
+top:20px;
+height:fit-content;
+background:#fff;
+border-radius:20px;
+padding:25px;
+box-shadow:0 10px 40px rgba(0,0,0,.05);
+}
+
+.sidebar h3{
+font-size:20px;
+margin-bottom:20px;
+color:#0f172a;
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar ul li{
+margin-bottom:12px;
+}
+
+.sidebar a{
+text-decoration:none;
+color:#334155;
+font-weight:500;
+transition:.3s;
+}
+
+.sidebar a:hover{
+color:#2563eb;
+padding-left:5px;
+}
+
+.content{
+flex:1;
+}
+
+.hero{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+border-radius:30px;
+padding:60px;
+color:#fff;
+margin-bottom:35px;
+box-shadow:0 20px 50px rgba(37,99,235,.25);
+}
+
+.hero h1{
+font-size:48px;
+line-height:1.2;
+margin-bottom:20px;
+font-weight:800;
+}
+
+.hero p{
+font-size:20px;
+opacity:.95;
+max-width:850px;
+}
+
+.card{
+background:#fff;
+padding:45px;
+border-radius:25px;
+margin-bottom:30px;
+box-shadow:0 10px 40px rgba(0,0,0,.05);
+}
+
+h2{
+font-size:34px;
+margin-bottom:20px;
+color:#0f172a;
+}
+
+h3{
+font-size:25px;
+margin:25px 0 12px;
+color:#1e293b;
+}
+
+p{
+font-size:18px;
+margin-bottom:18px;
+color:#475569;
+}
+
+ul{
+padding-left:20px;
+margin:20px 0;
+}
+
+li{
+font-size:18px;
+margin-bottom:10px;
+color:#475569;
+}
+
+.formula{
+background:#eff6ff;
+border-left:6px solid #2563eb;
+padding:25px;
+font-size:32px;
+font-weight:800;
+border-radius:18px;
+margin:30px 0;
+text-align:center;
+color:#1e3a8a;
+}
+
+.highlight{
+background:#f8fafc;
+padding:25px;
+border-radius:18px;
+border:1px solid #e2e8f0;
+margin:25px 0;
+}
+
+.cta-box{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+padding:35px;
+border-radius:25px;
+text-align:center;
+color:white;
+margin:35px 0;
+}
+
+.cta-box h3{
+color:white;
+font-size:30px;
+margin-bottom:15px;
+}
+
+.cta-box p{
+color:#e2e8f0;
+}
+
+.cta-btn{
+display:inline-block;
+margin-top:20px;
+padding:16px 30px;
+background:#fff;
+color:#2563eb;
+font-weight:700;
+border-radius:50px;
+text-decoration:none;
+transition:.3s;
+}
+
+.cta-btn:hover{
+transform:translateY(-4px);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+overflow:hidden;
+border-radius:20px;
+margin-top:25px;
+}
+
+table th{
+background:#2563eb;
+color:#fff;
+padding:20px;
+text-align:left;
+font-size:18px;
+}
+
+table td{
+padding:18px;
+border-bottom:1px solid #e5e7eb;
+font-size:17px;
+background:white;
+}
+
+.accordion{
+margin-top:20px;
+}
+
+details{
+background:#fff;
+border-radius:18px;
+padding:20px;
+margin-bottom:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+summary{
+font-weight:700;
+cursor:pointer;
+font-size:18px;
+color:#0f172a;
+}
+
+footer{
+text-align:center;
+padding:50px 20px;
+color:#64748b;
+font-size:16px;
+}
+
+a{
+color:#2563eb;
+font-weight:700;
+text-decoration:none;
+}
+
+@media(max-width:992px){
+
+.container{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+position:relative;
+}
+
+.hero{
+padding:40px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.card{
+padding:30px;
+}
+
+h2{
+font-size:28px;
+}
+}
+
+@media(max-width:600px){
+
+.hero{
+padding:30px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.card{
+padding:25px;
+}
+
+.formula{
+font-size:24px;
+}
+
+h2{
+font-size:26px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<aside class="sidebar">
+<h3>Table of Contents</h3>
+<ul>
+<li><a href="#what">What is CGPA?</a></li>
+<li><a href="#formula">Formula</a></li>
+<li><a href="#steps">Steps</a></li>
+<li><a href="#table">Conversion Table</a></li>
+<li><a href="#mistakes">Common Mistakes</a></li>
+<li><a href="#faq">FAQs</a></li>
+</ul>
+</aside>
+
+<main class="content">
+
+<section class="hero">
+<h1>How to Convert CGPA to Percentage</h1>
+<p>
+Learn how to convert CGPA to percentage using formulas, examples,
+tables, and step-by-step guidance designed for students.
+</p>
+</section>
+
+<section class="card" id="what">
+<h2>What is CGPA?</h2>
+
+<p>
+CGPA (Cumulative Grade Point Average) is a grading system used by schools
+and universities to measure student academic performance.
+</p>
+
+<p>
+Many institutions still require percentage format for admissions,
+scholarships, and jobs. That is why students often search for a
+reliable way to convert their CGPA.
+</p>
+
+<div class="cta-box">
+<h3>Need Instant Calculation?</h3>
+
+<p>
+Try this easy and accurate
+<a href="https://cgpalab.com/" target="_blank" style="color:white;text-decoration:underline;">
+CGPA to Percentage
+</a>
+tool to calculate your result instantly.
+</p>
+
+<a class="cta-btn" href="https://cgpalab.com/" target="_blank">
+Calculate Now
+</a>
+</div>
+</section>
+
+<section class="card" id="formula">
+
+<h2>CGPA to Percentage Formula</h2>
+
+<p>
+Most institutions use this formula:
+</p>
+
+<div class="formula">
+Percentage = CGPA × 9.5
+</div>
+
+<div class="highlight">
+<h3>Example</h3>
+<p><strong>CGPA:</strong> 8.2</p>
+<p><strong>Calculation:</strong> 8.2 × 9.5</p>
+<p><strong>Result:</strong> 77.9%</p>
+</div>
+
+</section>
+
+<section class="card" id="steps">
+
+<h2>Step-by-Step Guide</h2>
+
+<h3>1. Find Your CGPA</h3>
+<ul>
+<li>Check your transcript</li>
+<li>Look at semester results</li>
+<li>Use your student portal</li>
+</ul>
+
+<h3>2. Check University Formula</h3>
+
+<p>
+Different universities use different formulas.
+Some use ×9.5 while others use ×10.
+</p>
+
+<h3>3. Multiply the CGPA</h3>
+
+<p>
+You can manually calculate or use this
+<a href="https://cgpalab.com/" target="_blank">
+CGPA to Percentage Calculator
+</a>.
+</p>
+
+<div class="highlight">
+<p>7.8 × 9.5 = 74.1%</p>
+<p>9.1 × 9.5 = 86.45%</p>
+</div>
+
+<h3>4. Round Your Result</h3>
+
+<p>
+Some institutions ask for rounded percentages.
+Example: 86.45% → 86.5%
+</p>
+
+</section>
+
+<section class="card" id="table">
+
+<h2>CGPA to Percentage Table</h2>
+
+<table>
+<tr>
+<th>CGPA</th>
+<th>Percentage</th>
+</tr>
+
+<tr><td>10.0</td><td>95%</td></tr>
+<tr><td>9.5</td><td>90.25%</td></tr>
+<tr><td>9.0</td><td>85.5%</td></tr>
+<tr><td>8.5</td><td>80.75%</td></tr>
+<tr><td>8.0</td><td>76%</td></tr>
+<tr><td>7.5</td><td>71.25%</td></tr>
+<tr><td>7.0</td><td>66.5%</td></tr>
+<tr><td>6.5</td><td>61.75%</td></tr>
+<tr><td>6.0</td><td>57%</td></tr>
+</table>
+
+</section>
+
+<section class="card" id="mistakes">
+
+<h2>Common Mistakes Students Make</h2>
+
+<ul>
+<li>Using the wrong formula</li>
+<li>Confusing GPA with CGPA</li>
+<li>Calculation mistakes</li>
+<li>Incorrect decimal rounding</li>
+</ul>
+
+</section>
+
+<section class="card" id="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="accordion">
+
+<details>
+<summary>What is the easiest way to convert CGPA to percentage?</summary>
+<p>
+Use the formula CGPA × 9.5 or an online
+<a href="https://cgpalab.com/" target="_blank">
+CGPA to Percentage Calculator
+</a>.
+</p>
+</details>
+
+<details>
+<summary>Is 8 CGPA good?</summary>
+<p>
+Yes, 8 CGPA is considered a strong academic score in many institutions.
+</p>
+</details>
+
+<details>
+<summary>Do all universities use the same formula?</summary>
+<p>
+No. Some universities use ×9.5 while others may use ×10 or custom systems.
+</p>
+</details>
+
+</div>
+
+</section>
+
+</main>
+</div>
+
+<footer>
+© 2026 Complete CGPA Guide — Designed for Better User Experience
+</footer>
+
+</body>
+</html>
